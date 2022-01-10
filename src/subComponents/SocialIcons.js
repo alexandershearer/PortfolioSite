@@ -22,7 +22,7 @@ z-index:3;
 const Line = styled.span`
 width: 2px;
 height: 8rem;
-background-color: ${props => props.theme.text}
+background-color: ${props => props.color === 'dark' ? DarkTheme.text : DarkTheme.body};
 `
 
 const SocialIcons = (props) => {
@@ -35,21 +35,21 @@ const SocialIcons = (props) => {
             </div>
             <div>
                 <NavLink style={{ color: 'inherit' }} target="_blank" to="/">
-                    <Twitter width={25} height={25} fill='currentColor' />
+                    <Twitter width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body} />
                 </NavLink>
             </div>
             <div>
                 <NavLink style={{ color: 'inherit' }} target="_blank" to="/">
-                    <Twitter width={25} height={25} fill='currentColor' />
+                    <Twitter width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body} />
                 </NavLink>
             </div>
             <div>
                 <NavLink style={{ color: 'inherit' }} target="_blank" to="/">
-                    <Twitter width={25} height={25} fill='currentColor' />
+                    <Twitter width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body} />
                 </NavLink>
             </div>
 
-            <Line></Line>
+            <Line color={props.theme} />
         </Icons>
     )
 }
