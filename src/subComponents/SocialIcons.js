@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { Github, Twitter } from '../components/AllSvgs'
-
+import { DarkTheme } from '../components/Themes'
 
 const Icons = styled.div`
 display: flex;
@@ -25,12 +25,12 @@ height: 8rem;
 background-color: ${props => props.theme.text}
 `
 
-const SocialIcons = () => {
+const SocialIcons = (props) => {
     return (
         <Icons>
             <div>
                 <NavLink style={{ color: 'inherit' }} target="_blank" to="/">
-                    <Github width={25} height={25} fill='currentColor' />
+                    <Github width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body} />
                 </NavLink>
             </div>
             <div>
