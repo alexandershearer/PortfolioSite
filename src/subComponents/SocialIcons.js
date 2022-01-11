@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import { Github, Twitter } from '../components/AllSvgs'
+import { Github, Instagram, Twitter } from '../components/AllSvgs'
 import { DarkTheme } from '../components/Themes'
 
 const Icons = styled.div`
@@ -40,7 +40,7 @@ const SocialIcons = (props) => {
             </div>
             <div>
                 <NavLink style={{ color: 'inherit' }} target="_blank" to="/">
-                    <Twitter width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body} />
+                    <Instagram width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body} />
                 </NavLink>
             </div>
             <div>
