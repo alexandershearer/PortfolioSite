@@ -12,7 +12,7 @@ color: ${props => props.theme.body};
 padding: 1.5rem 2rem;
 margin-right: 8rem;
 
-border-radius: 0 15% 0 15%;
+border-radius: 15%;
 display: flex;
 flex-direction: column;
 justify-content: space-between;

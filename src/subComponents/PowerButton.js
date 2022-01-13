@@ -25,8 +25,8 @@ transition: 1s;
 cursor: pointer;
 
 &:hover{
-    background-color: rgba(0,255,0,0.4);
-    box-shadow: 0 0 8px 6px rgba(0,255,0,0.2);
+    background-color: rgba(145, 255, 173,0.4);
+    box-shadow: 0 0 8px 6px rgba(145, 255, 173, 0.2);
     transition: 1s;
 }
 

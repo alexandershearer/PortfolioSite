@@ -6,13 +6,13 @@ import styled, { keyframes } from 'styled-components'
 import LogoComponent from '../subComponents/LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
-import { YinYang, RopeCircle } from './AllSvgs'
+import { RopeCircle, Pacman, PokeBall, FocusCross, GameDisk } from './AllSvgs'
 import Intro from './Intro'
 
 
 
 const MainContainer = styled.div`
-background: ${props => props.theme.body}:
+background-color: rgba(145, 255, 173);
 width: 100vw;
 height: 100vh;
 overflow:hidden;
@@ -106,7 +106,7 @@ align-items: center;
 transition: all 1s ease;
 
 &>:first-child{
-    animation: ${rotate} infinite 1.5s linear;
+    animation: ${rotate} infinite 2.5s linear;
 }
 
 &>:last-child{
@@ -144,7 +144,7 @@ const Main = () => {
 
 
                 <Center click={click}>
-                    <YinYang onClick={() => handleClick()} width={click ? 120 : 175} height={click ? 120 : 175} fill='currentColor' />
+                    <GameDisk onClick={() => handleClick()} width={click ? 120 : 175} height={click ? 120 : 175} fill='#000' />
                     <span>click here</span>
                 </Center>
 

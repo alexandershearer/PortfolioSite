@@ -9,7 +9,7 @@ import PowerButton from '../subComponents/PowerButton';
 
 import { Work } from "../data/WorkData";
 import Card from '../subComponents/Card';
-import { YinYang } from './AllSvgs';
+import { GameDisk, YinYang } from './AllSvgs';
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -97,7 +97,7 @@ const WorkPage = () => {
                     }
                 </Main>
                 <Rotate ref={yinyang}>
-                    <YinYang width={80} height={80} fill={DarkTheme.text} />
+                    <GameDisk width={80} height={80} fill={DarkTheme.text} />
                 </Rotate>
 
 
