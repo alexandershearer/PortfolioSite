@@ -9,7 +9,7 @@ import PowerButton from '../subComponents/PowerButton';
 
 import { Work } from "../data/WorkData";
 import Card from '../subComponents/Card';
-import { GameDisk, YinYang } from './AllSvgs';
+import { GameDisk } from './AllSvgs';
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -56,7 +56,7 @@ const container = {
 const WorkPage = () => {
 
     const ref = useRef(null);
-    const yinyang = useRef(null);
+    const gamedisk = useRef(null);
 
 
 
@@ -69,7 +69,7 @@ const WorkPage = () => {
             element.style.transform = `translateX(${-window.pageYOffset}px)`
 
 
-            return (yinyang.current.style.transform =
+            return (gamedisk.current.style.transform =
                 'rotate(' + -window.pageYOffset + 'deg)')
         }
 
@@ -96,7 +96,7 @@ const WorkPage = () => {
                         )
                     }
                 </Main>
-                <Rotate ref={yinyang}>
+                <Rotate ref={gamedisk}>
                     <GameDisk width={80} height={80} fill={DarkTheme.text} />
                 </Rotate>
 
